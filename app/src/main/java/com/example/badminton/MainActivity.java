@@ -65,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue(String.class);
-                //4.3
-                if (!value.equals("5.1")) {
+                if (!value.equals("5.2")) {
                     auth.signOut();
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setCancelable(false);
@@ -103,22 +102,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        if(!internetIsConnected()){
-//            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-//            builder.setCancelable(false);
-//            builder.setTitle("Network Error");
-//            builder.setMessage("Please check your connection and Reload the App");
-//            builder.setPositiveButton("Reload",
-//                    new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            Intent intent=new Intent(MainActivity.this,MainActivity.class);
-//                            startActivity(intent);
-//                        }
-//                    });
-//            AlertDialog dialog = builder.create();
-//            dialog.show();
-//        }
+        if(!internetIsConnected()){
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+            builder.setCancelable(false);
+            builder.setTitle("Network Error");
+            builder.setMessage("Please check your connection and Reload the App");
+            builder.setPositiveButton("Reload",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
 
 
         binding.itemImage.setOnLongClickListener(new View.OnLongClickListener() {
