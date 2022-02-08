@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/completed_match_btn.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/currentMatchBtn.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/current_match_btn.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/un_clickable_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable/winner_btn.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_app_lock.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_in_game_page.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_individual.xml" value="0.16666666666666666" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_notifications.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_notificatoin.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_team.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_weekly_winner.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_winner_bottom_sheet.xml" value="0.34375" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_delete_a_game.xml" value="0.1712962962962963" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_individual.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_individual_ranking.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_matches.xml" value="0.12" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_new_team.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_ranking_for_weekly.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_reverting_changes.xml" value="0.15833333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_showing_winners.xml" value="0.11944444444444445" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_table.xml" value="0.14666666666666667" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_team_info_bottom_sheet.xml" value="0.1712962962962963" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_team_list.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_team_maker.xml" value="0.11944444444444445" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_team_update_bottom_sheet.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_teams.xml" value="0.22" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_weekly_winner_history.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_winner_selection_bottom_sheet.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/sample_for_notifications.xml" value="0.16666666666666666" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/sample_layout_home_page.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/shimmer_for_home_page_games.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/drawable-v24/button_bg_2.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/activity_app_lock.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/fragment_add_team.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/sample_layout_home_page.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Badminton/app/src/main/res/layout/shimmer_for_home_page_games.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

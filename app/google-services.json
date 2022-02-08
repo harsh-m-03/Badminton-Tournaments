@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210323831236",
+    "project_id": "badminton-dcf96",
+    "storage_bucket": "badminton-dcf96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210323831236:android:1d76045c9698bf097e8c91",
+        "android_client_info": {
+          "package_name": "com.example.badminton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210323831236-4osgugmt59pi5eims8q5uj0dit6aido8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe284DBbigEpmEtwZGqOD72hzlad3igJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210323831236-4osgugmt59pi5eims8q5uj0dit6aido8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

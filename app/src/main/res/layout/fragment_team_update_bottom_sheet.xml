@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp"
+    tools:context=".Fragment.BottomSheets.TeamUpdateBottomSheet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Update your Team"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/teamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Team Name: "
+                android:textColor="@color/off_white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/grey"
+                android:hint="Games Played: "
+                android:textColorHint="@color/off_white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gamesPlayed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/off_white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:hint="Games Won: "
+                android:textColorHint="@color/off_white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gameWon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/off_white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:hint="Games Lost: "
+                android:textColorHint="@color/off_white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gameLost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/off_white" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:hint="Defeated Against: "
+                android:textColorHint="@color/off_white"
+                android:visibility="gone"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/defeatedBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/off_white" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:hint="Won Against: "
+                android:textColorHint="@color/off_white"
+                android:visibility="gone"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wonAgainst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/off_white" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:hint="History: "
+                android:textColorHint="@color/off_white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/off_white"
+                app:startIconTint="@color/off_white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/off_white" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button_bg_2"
+                    android:backgroundTint="@color/red"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button_bg_2"
+                    android:backgroundTint="@color/white"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Update"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

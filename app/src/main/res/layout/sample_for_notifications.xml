@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="2dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_below="@id/line"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearLayoutForHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/heading"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Heading"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Message"
+            android:textColor="@color/off_white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    tools:context=".AppLock">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Welcome Back!"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Enter Admin Key to Login"
+            android:textColor="@color/off_white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/grey"
+            android:hint="Admin Key"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/off_white"
+            android:textColorHint="@color/off_white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/off_white"
+            app:startIconTint="@color/off_white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adminKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:textColor="@color/off_white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_2"
+                android:backgroundTint="@color/white"
+                android:elevation="2dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="10dp"
+            android:text="Log-in as Guest"
+            android:id="@+id/guest"
+            android:textColor="@color/off_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
