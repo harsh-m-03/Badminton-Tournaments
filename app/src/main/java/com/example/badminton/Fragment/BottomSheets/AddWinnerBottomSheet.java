@@ -298,7 +298,7 @@ public class AddWinnerBottomSheet extends BottomSheetDialogFragment {
                                                             }
 
                                                             FirebaseMessaging.getInstance().subscribeToTopic("all");
-                                                            FcmNotificationsSender notificationsSender = new FcmNotificationsSender("/topics/all", "Tournament: " + gameName, binding.winner.getText().toString() + " won the Tournament", getActivity().getApplicationContext(), getActivity());
+                                                            FcmNotificationsSender notificationsSender = new FcmNotificationsSender("/topics/all", "Tournament: " + gameName, binding.winner.getText().toString() + " won the Tournament\n" + binding.runnerUp.getText().toString() + " are the runner-ups", getActivity().getApplicationContext(), getActivity());
                                                             notificationsSender.SendNotifications();
 
 

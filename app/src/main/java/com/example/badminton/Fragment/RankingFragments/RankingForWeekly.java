@@ -1,6 +1,9 @@
 package com.example.badminton.Fragment.RankingFragments;
 
 import android.annotation.SuppressLint;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -140,19 +143,33 @@ public class RankingForWeekly extends Fragment {
                     String[] ranks = binding.weeklyRank.getText().toString().split("\n");
                     String[] weeklyNames = binding.weeklyNames.getText().toString().split("\n");
                     String[] weeklyPct = binding.weeklyPercentage.getText().toString().split("\n");
-
                     for (int i = 2; i < ranks.length; i++) {
                         if (Integer.parseInt(ranks[i].substring(2)) < 10)
                             ranks[i] = "0" + ranks[i].substring(2);
                         else ranks[i] = ranks[i].substring(2);
+
                         msgToSend += ranks[i] + " | " + weeklyNames[i] + " | " + weeklyPct[i] + "\n";
                     }
-                    Intent sendIntent = new Intent();
-                    sendIntent.setAction(Intent.ACTION_SEND);
-                    sendIntent.putExtra(Intent.EXTRA_TEXT, msgToSend);
-                    sendIntent.setPackage("com.whatsapp");
-                    sendIntent.setType("text/plain");
-                    startActivity(sendIntent);
+
+                    msgToSend += "\n\n";
+                    msgToSend += binding.avgMatches.getText().toString();
+
+
+                    try {
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, msgToSend);
+                        sendIntent.setPackage("com.whatsapp");
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
+                    } catch (Exception e) {
+                        Toast.makeText(getContext(), "WhatsApp not found\nTable Copied to Clipboard", Toast.LENGTH_SHORT).show();
+                        ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                        ClipData data = ClipData.newPlainText("Table", msgToSend);
+                        clipboardManager.setPrimaryClip(data);
+                    }
+
+
                 }
                 return true;
             }

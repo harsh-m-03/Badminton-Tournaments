@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue(String.class);
-                if (!value.equals("5.2")) {
+                if (!value.equals("5.3")) {
                     auth.signOut();
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setCancelable(false);
@@ -102,22 +102,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if(!internetIsConnected()){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setCancelable(false);
-            builder.setTitle("Network Error");
-            builder.setMessage("Please check your connection and Reload the App");
-            builder.setPositiveButton("Reload",
-                    new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Intent intent=new Intent(MainActivity.this,MainActivity.class);
-                            startActivity(intent);
-                        }
-                    });
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        }
+//        if (!internetIsConnected()) {
+//            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//            builder.setCancelable(false);
+//            builder.setTitle("Network Error");
+//            builder.setMessage("Please check your connection and Reload the App");
+//            builder.setPositiveButton("Reload",
+//                    new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+//                            startActivity(intent);
+//                        }
+//                    });
+//            AlertDialog dialog = builder.create();
+//            dialog.show();
+//        }
 
 
         binding.itemImage.setOnLongClickListener(new View.OnLongClickListener() {
@@ -126,6 +126,28 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, AppLock.class);
                 startActivity(intent);
                 return false;
+            }
+        });
+        database.getReference().child("adminAccess").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int temp=snapshot.getValue(Integer.class);
+                if(temp==1){
+                    binding.adminBtn.setVisibility(View.VISIBLE);
+                }else
+                    binding.adminBtn.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        binding.adminBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AppLock.class);
+                startActivity(intent);
             }
         });
 
