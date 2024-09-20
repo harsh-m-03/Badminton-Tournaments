@@ -2,6 +2,7 @@ package com.example.badminton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import com.example.badminton.databinding.ActivitySplashScreenBinding;
 
 import java.util.Objects;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
     ActivitySplashScreenBinding binding;
     private MediaPlayer mediaPlayer;
@@ -33,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
                     e.printStackTrace();
                 } finally {
                     mediaPlayer.stop();
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this, AppLock.class);
                     startActivity(intent);
                 }
             }

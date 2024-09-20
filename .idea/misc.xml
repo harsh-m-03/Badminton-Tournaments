@@ -6,7 +6,9 @@
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/completed_match_btn.xml" value="0.19583333333333333" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/currentMatchBtn.xml" value="0.19583333333333333" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/current_match_btn.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.123" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable-v24/un_clickable_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable/ic_launcher_background.xml" value="0.123" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/drawable/winner_btn.xml" value="0.19583333333333333" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_app_lock.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_in_game_page.xml" value="0.1796875" />
@@ -15,6 +17,7 @@
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_notifications.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_notificatoin.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_game.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_team.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_weekly_winner.xml" value="0.1796875" />
         <entry key="..\:/Codes/Android Projects/Badminton/app/src/main/res/layout/fragment_add_winner_bottom_sheet.xml" value="0.34375" />
@@ -47,7 +50,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
